@@ -74,7 +74,40 @@ input[type="submit"]:hover {
   text-decoration: underline;
 }
 
+a {
+  text-decoration: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border: none;
+  margin-top: 7px;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 14px;
+}
+
+a:hover {
+  background-color: #0056b3;
+}
+
 /* Content Styles */
+
+.reg-h1 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 26px;
+}
 .content {
   flex: 1;
   padding: 20px;
