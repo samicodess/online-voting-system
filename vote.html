@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vote</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <ul>
+        <li><a href="poll_creation.html">Create Poll</a></li>
+        <li><a href="vote.html">Vote</a></li>
+        <li><a href="results.html">Results</a></li>
+        <li><a href="#" onclick="logout()">Logout</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <div id="poll">
+        <h1>Select a Poll to Vote</h1>
+        <select id="poll-select" onchange="loadSelectedPoll()">
+          <option value="">--Select a Poll--</option>
+        </select>
+        <div id="poll-options-container" style="display: none">
+          <h2 id="poll-question">Poll Question</h2>
+          <form id="voteForm">
+            <div id="poll-options"></div>
+            <button type="submit">Submit Vote</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="/online-olling-system/js/vote.js"></script>
+    <script src="/online-olling-system/js/logout.js"></script>
+  </body>
+</html>

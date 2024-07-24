@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Poll</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <ul>
+        <li><a href="poll_creation.html">Create Poll</a></li>
+        <li><a href="vote.html">Vote</a></li>
+        <li><a href="results.html">Results</a></li>
+        <li><a href="#" onclick="logout()">Logout</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <div id="poll-creation">
+        <h1>Create a Poll</h1>
+        <form id="pollForm">
+          <label for="question">Poll Question:</label>
+          <input type="text" id="question" name="question" required />
+          <div id="options">
+            <label>Options:</label>
+            <div class="option">
+              <input type="text" name="option" required />
+              <button
+                type="button"
+                class="remove-option"
+                onclick="removeOption(this)"
+              >
+                Remove
+              </button>
+            </div>
+            <div class="option">
+              <input type="text" name="option" required />
+              <button
+                type="button"
+                class="remove-option"
+                onclick="removeOption(this)"
+              >
+                Remove
+              </button>
+            </div>
+          </div>
+          <button type="button" onclick="addOption()">Add Option</button>
+          <button type="submit">Create Poll</button>
+        </form>
+      </div>
+    </div>
+    <script src="/online-olling-system/js/poll-creation.js"></script>
+    <script src="/online-olling-system/js/logout.js"></script>
+  </body>
+</html>
