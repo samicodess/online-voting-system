@@ -1,6 +1,6 @@
 if (!localStorage.getItem("currentUser")) {
   alert("Please login first");
-  window.location.href = "index.html";
+  window.location.href = "auth.html";
 }
 
 document.getElementById("pollForm").addEventListener("submit", createPoll);
