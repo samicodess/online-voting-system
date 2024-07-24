@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vote</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <div class="sidebar">
@@ -17,20 +17,14 @@
     </div>
     <div class="content">
       <div id="poll">
-        <h1>Select a Poll to Vote</h1>
-        <select id="poll-select" onchange="loadSelectedPoll()">
-          <option value="">--Select a Poll--</option>
-        </select>
-        <div id="poll-options-container" style="display: none">
-          <h2 id="poll-question">Poll Question</h2>
-          <form id="voteForm">
-            <div id="poll-options"></div>
-            <button type="submit">Submit Vote</button>
-          </form>
-        </div>
+        <h1 id="poll-question">Poll Question</h1>
+        <form id="voteForm">
+          <div id="poll-options"></div>
+          <button type="submit">Submit Vote</button>
+        </form>
       </div>
     </div>
-    <script src="/online-olling-system/js/vote.js"></script>
-    <script src="/online-olling-system/js/logout.js"></script>
+    <script src="vote.js"></script>
+    <script src="logout.js"></script>
   </body>
 </html>
