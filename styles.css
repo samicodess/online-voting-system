@@ -74,7 +74,7 @@ input[type="submit"]:hover {
   text-decoration: underline;
 }
 
-a {
+.btn-lg-sgnup {
   text-decoration: none;
   background-color: #007bff;
   color: white;
@@ -89,7 +89,7 @@ a {
   font-size: 14px;
 }
 
-a:hover {
+.btn-lg-sgnup:hover {
   background-color: #0056b3;
 }
 
